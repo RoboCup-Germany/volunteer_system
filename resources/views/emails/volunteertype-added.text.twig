@@ -1,0 +1,11 @@
+{% extends "emails/mail.text.twig" %}
+
+{% set url=url('/volunteertypes', {'action': 'view', 'volunteertype_id': volunteertype.id}) %}
+
+{% block introduction %}
+{{ __('notification.volunteertype.added.introduction', [volunteertype.name, url]) }}
+{% endblock %}
+
+{% block message %}
+{{ __('notification.volunteertype.added.text', [volunteertype.name, url]) }}
+{% endblock %}

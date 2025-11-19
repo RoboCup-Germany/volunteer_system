@@ -1,0 +1,347 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Volunteersystem 2.0\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language: en_US\n"
+
+msgid "auth.not-found"
+msgstr "No user was found or password is wrong. Please try again. If you are still having problems, ask Heaven."
+
+msgid "validation.password.required"
+msgstr "The password is required."
+
+msgid "validation.password.length"
+msgstr "The password entered is too short."
+
+msgid "validation.login.required"
+msgstr "The login name is required."
+
+msgid "validation.pronoun.required"
+msgstr "Please enter your pronoun."
+
+msgid "validation.firstname.required"
+msgstr "Please enter your first name."
+
+msgid "validation.lastname.required"
+msgstr "Please enter your last name."
+
+msgid "validation.mobile.required"
+msgstr "Please enter your mobile number."
+
+msgid "validation.dect.required"
+msgstr "Please enter your DECT number."
+
+msgid "validation.username.required"
+msgstr "Please enter your nick."
+
+msgid "validation.username.username"
+msgstr ""
+"Please enter a valid nick:"
+"Use up to 24 letters, numbers or connecting punctuations (.-_) for your nickname."
+
+msgid "validation.email.required"
+msgstr "The e-mail address is required."
+
+msgid "validation.email.email"
+msgstr "This e-mail address is not valid."
+
+msgid "validation.new_password.length"
+msgstr "Your new password is too short."
+
+msgid "validation.password.confirmed"
+msgstr "Your passwords are not equal."
+
+msgid "validation.password_confirmation.required"
+msgstr "You have to confirm your password."
+
+msgid "validation.tshirt_size.required"
+msgstr "Please choose your T-shirt size."
+
+msgid "validation.tshirt_size.shirtSize"
+msgstr "Please choose a valid T-shirt size."
+
+msgid "validation.planned_arrival_date.required"
+msgstr "Please enter your planned date of arrival."
+
+msgid "validation.planned_arrival_date.min"
+msgstr "The planned date of arrival must not be before the buil-up start date."
+
+msgid "validation.planned_arrival_date.between"
+msgstr "The planned date of arrival must be between the build-up and tear-down date."
+
+msgid "schedule.edit.success"
+msgstr "The schedule was configured successfully."
+
+msgid "schedule.import.request-error"
+msgstr "The schedule could not be requested."
+
+msgid "schedule.import.read-error"
+msgstr "Unable to parse schedule."
+
+msgid "schedule.import.success"
+msgstr "Schedule import successful."
+
+msgid "schedule.delete.success"
+msgstr "Schedule deletion successful."
+
+msgid "shifts.filter.toggle"
+msgstr "collapse/show filters"
+
+msgid "validation.schedule-url.required"
+msgstr "The schedule URL is required."
+
+msgid "validation.schedule-url.url"
+msgstr "The schedule URL needs to be of type URL."
+
+msgid "validation.shift-type.required"
+msgstr "The shift type is required."
+
+msgid "validation.shift-type.int"
+msgstr "The shift type has to ba a number."
+
+msgid "validation.minutes-before.int"
+msgstr "The minutes before the talk have to be an integer."
+
+msgid "validation.minutes-after.int"
+msgstr "The minutes after the talk have to be an integer."
+
+msgid "news.comment.success"
+msgstr "Comment saved."
+
+msgid "news.comment-delete.success"
+msgstr "Comment successfully deleted."
+
+msgid "news.edit.duplicate"
+msgstr "This news has already been created."
+
+msgid "news.edit.success"
+msgstr "News successfully updated."
+
+msgid "news.delete.success"
+msgstr "News successfully deleted."
+
+msgid "oauth.invalid-state"
+msgstr "Invalid OAuth state"
+
+msgid "oauth.provider-error"
+msgstr "OAuth provider error"
+
+msgid "oauth.already-connected"
+msgstr "This account is already connected to another account!"
+
+msgid "oauth.connected"
+msgstr "Connected login provider!"
+
+msgid "oauth.disconnected"
+msgstr "Disconnected login provider!"
+
+msgid "oauth.not-found"
+msgstr "Unable to find account"
+
+msgid "oauth.provider-not-found"
+msgstr "Unable to find OAuth provider"
+
+msgid "oauth.invalid_request"
+msgstr "The OAuth-Provider rejected the request due to a missing or invalid parameter."
+
+msgid "oauth.unauthorized_client"
+msgstr "Not authorized as a client with the OAuth-Provider."
+
+msgid "oauth.access_denied"
+msgstr "The resource owner or authorization server denied the request."
+
+msgid "oauth.unsupported_response_type"
+msgstr "The OAuth-Provider does not support obtaining an authorization code using this method."
+
+msgid "oauth.invalid_scope"
+msgstr "The requested scope is invalid, unknown, or malformed."
+
+msgid "oauth.server_error"
+msgstr "The OAuth-Provider encountered an unexpected condition that prevented it from fulfilling the request."
+
+msgid "oauth.temporarily_unavailable"
+msgstr "The OAuth-Provider is currently unable to handle the request "
+"due to a temporary overloading or maintenance of the server."
+
+msgid "settings.profile.planned_arrival_date.invalid"
+msgstr "Please enter your planned date of arrival. "
+"It should be after the buildup start date and before teardown end date."
+
+msgid "settings.profile.planned_departure_date.invalid"
+msgstr "Please enter your planned date of departure. "
+"It should be after your planned arrival date and after buildup start date and before teardown end date."
+
+msgid "settings.success"
+msgstr "Settings saved."
+
+msgid "settings.sessions.delete_success"
+msgstr "Session deleted successfully."
+
+msgid "settings.api.key_reset_success"
+msgstr "API key successfully reset."
+
+msgid "faq.delete.success"
+msgstr "FAQ entry successfully deleted."
+
+msgid "faq.edit.success"
+msgstr "FAQ entry successfully updated."
+
+msgid "question.menu"
+msgstr "Ask the Heaven"
+
+msgid "question.delete.success"
+msgstr "Question deleted successfully."
+
+msgid "question.add.success"
+msgstr "Question added successfully."
+
+msgid "question.edit.success"
+msgstr "Question updated successfully."
+
+msgid "tag.edit.duplicate"
+msgstr "A tag with the name already exists!"
+
+msgid "tag.edit.success"
+msgstr "Tag updated successfully."
+
+msgid "tag.delete.success"
+msgstr "Tag deleted successfully."
+
+msgid "notification.news.new"
+msgstr "New news: %s"
+
+msgid "notification.news.new.introduction"
+msgstr "A new news is available: %1$s"
+
+msgid "notification.news.new.text"
+msgstr "You can view it at %3$s"
+
+msgid "notification.news.updated"
+msgstr "Updated News: %s"
+
+msgid "notification.messages.new"
+msgstr "New private message from %s"
+
+msgid "notification.messages.new.text"
+msgstr "you've got a new private message from \"%s\". You can view it at %s"
+
+msgid "notification.volunteertype.confirmed"
+msgstr "You have been confirmed as an %s"
+
+msgid "notification.volunteertype.confirmed.introduction"
+msgstr "You have been confirmed as an %1$s by a supporter."
+
+msgid "notification.volunteertype.confirmed.text"
+msgstr "You can find a description at %2$s"
+
+msgid "notification.volunteertype.added"
+msgstr "You have been added as an %s"
+
+msgid "notification.volunteertype.added.introduction"
+msgstr "You have been added as an %1$s by a supporter."
+
+msgid "notification.volunteertype.added.text"
+msgstr "You can find a description at %2$s"
+
+msgid "notification.shift.deleted"
+msgstr "Your Shift was deleted"
+
+msgid "notification.shift.deleted.introduction"
+msgstr "A Shift you are registered on was deleted:"
+
+msgid "notification.shift.deleted.worklog"
+msgstr ""
+"Since the deleted shift was already done, "
+"we added a worklog entry instead, to keep your work hours correct."
+
+msgid "notification.shift.updated"
+msgstr "Your shift was updated"
+
+msgid "notification.shift.no_next_found"
+msgstr "There is no available shift."
+
+msgid "user.edit.success"
+msgstr "User edited successfully."
+
+msgid "message.delete.success"
+msgstr "Message successfully deleted."
+
+msgid "worklog.add.success"
+msgstr "Work log successfully added."
+
+msgid "worklog.edit.success"
+msgstr "Work log successfully updated."
+
+msgid "worklog.delete.success"
+msgstr "Work log successfully deleted."
+
+msgid "voucher.save.success"
+msgstr "Saved the number of vouchers."
+
+msgid "location.edit.success"
+msgstr "Location edited successfully."
+
+msgid "location.delete.success"
+msgstr "Location successfully deleted."
+
+msgid "shifttype.edit.success"
+msgstr "Shift type edited successfully."
+
+msgid "shifttype.delete.success"
+msgstr "Shift type successfully deleted."
+
+msgid "validation.name.exists"
+msgstr "The name is already used."
+
+msgid "registration.disabled"
+msgstr "The registration is disabled."
+
+msgid "registration.successful.supporter"
+msgstr "Registration successful."
+
+msgid "registration.successful"
+msgstr "Registration successful. You can now log in!"
+
+msgid "shifts.history.delete.success"
+msgstr "Shifts deleted successfully."
+
+msgid "config.event"
+msgstr "Event"
+
+msgid "config.name"
+msgstr "Event Name"
+
+msgid "config.name.info"
+msgstr "The event name is shown on the start page."
+
+msgid "config.welcome_msg"
+msgstr "Event Welcome Message"
+
+msgid "config.welcome_msg.info"
+msgstr "The welcome message is shown after successful registration. You can use markdown."
+
+msgid "config.buildup_start"
+msgstr "Buildup date"
+
+msgid "config.event_start"
+msgstr "Event start date"
+
+msgid "config.event_end"
+msgstr "Event end date"
+
+msgid "config.teardown_end"
+msgstr "Teardown end date"
+
+msgid "validation.event_start.after"
+msgstr "Event start must be after buildup."
+
+msgid "validation.event_end.after"
+msgstr "Event end must be after the event start."
+
+msgid "validation.teardown_end.after"
+msgstr "Teardown end must be after the event end."

@@ -1,0 +1,43 @@
+name: volunteersystem
+
+services:
+
+  server:
+    image: es_server
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    environment:
+      MYSQL_TYPE: mariadb
+      MYSQL_HOST: es_database
+      MYSQL_USER: volunteersystem
+      MYSQL_PASSWORD: volunteersystem
+      MYSQL_DATABASE: volunteersystem
+    ports:
+      - "5080:80"
+    env_file: deployment.env
+    networks:
+      - database
+      - internet
+    depends_on:
+      - es_database
+
+  database:
+    image: mariadb:10.7
+    environment:
+      MYSQL_DATABASE: volunteersystem
+      MYSQL_USER: volunteersystem
+      MYSQL_PASSWORD: volunteersystem
+      MYSQL_RANDOM_ROOT_PASSWORD: "1"
+      MYSQL_INITDB_SKIP_TZINFO: "yes"
+    volumes:
+      - db:/var/lib/mysql
+    networks:
+      - database
+volumes:
+  db: {}
+
+networks:
+  database:
+    internal: true
+  internet:

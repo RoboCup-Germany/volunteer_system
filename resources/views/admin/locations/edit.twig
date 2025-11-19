@@ -1,0 +1,68 @@
+{% extends 'pages/locations/index.twig' %}
+{% import 'macros/base.twig' as m %}
+{% import 'macros/form.twig' as f %}
+
+{% block title %}{{ location ? __('location.edit.title') : __('location.create.title') }}{% endblock %}
+
+{% block row_content %}
+    <form method="post">
+        {{ csrf() }}
+        {{ f.hidden('id', location ? location.id : '') }}
+
+        <div class="row">
+            <div class="col-lg-6">
+                {{ f.input('name', __('general.name'), {
+                    'required': true,
+                    'required_icon': true,
+                    'value': f.formData('location', location ? location.name : ''),
+                    'max_length': 35,
+                }) }}
+
+                {{ f.input('dect', __('general.dect'), {
+                    'value': f.formData('dect', location ? location.dect : ''),
+                }) }}
+                {{ f.input('map_url', __('location.map_url'), {
+                    'type': 'url',
+                    'value': f.formData('map_url', location ? location.map_url : ''),
+                    'info': __('location.map_url.info'),
+                    'max_length': 300,
+                }) }}
+
+                {{ f.textarea('description', __('general.description'), {
+                    'value': f.formData('description', location ? location.description : ''),
+                    'rows': 5,
+                    'info': __('form.markdown')
+                }) }}
+            </div>
+
+            <div class="col-lg-6">
+                <h4>{{ __('location.required_volunteers') }}</h4>
+                {% for types in volunteer_types.chunk(3) %}
+                    <div class="row">
+                        {% for volunteer_type in types %}
+                            {% set needed = needed_volunteer_types ? needed_volunteer_types.where('volunteer_type_id', volunteer_type.id).first() : null %}
+                            {% set name = 'volunteer_type_' ~ volunteer_type.id %}
+                            <div class="col-md-4">
+                                {{ f.number(name, volunteer_type.name, {
+                                    'value': f.formData(name, needed ? needed.count : 0),
+                                    'min': 0,
+                                    'step': 1,
+                                }) }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="btn-group">
+                {{ f.submit(__('form.save'), {'icon_left': 'save'}) }}
+                {% if location %}
+                    {{ f.delete(__('form.delete'), {'confirm_title': __('location.delete.title', [location.name|e])}) }}
+                {% endif %}
+            </div>
+        </div>
+
+    </form>
+{% endblock %}

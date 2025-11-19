@@ -1,0 +1,10 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": ["plugin:editorconfig/all", "prettier"],
+  "plugins": ["editorconfig"],
+  "rules": {
+    "prefer-arrow-callback": "error",
+    "prefer-template": "error",
+    "no-var": "error"
+  }
+}
